@@ -61,12 +61,12 @@ jobs:
         sed -i '/CONFIG_FIRMWARE_INCLUDE_ALIDDNS/d' .config #删除配置项阿里DDNS
         #######################################################################
         #                             sandianyue mod                          #
- #       sed -i '/CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS/d' .config #删除配置项SS
+        #sed -i '/CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS/d' .config #删除配置项SS
         sed -i '/CONFIG_FIRMWARE_INCLUDE_XRAY/d' .config #删除配置项Xray
         sed -i '/CONFIG_FIRMWARE_INCLUDE_SSOBFS/d' .config #删除配置项Simple-obfs
         sed -i '/CONFIG_FIRMWARE_INCLUDE_TROJAN/d' .config #删除配置项Trojan
         sed -i '/CONFIG_FIRMWARE_INCLUDE_ZEROTIER/d' .config #删除配置项Zerotier
-#        sed -i '/CONFIG_FIRMWARE_INCLUDE_ADBYBY/d' .config #删除配置项Adbyby Plus+
+        #sed -i '/CONFIG_FIRMWARE_INCLUDE_ADBYBY/d' .config #删除配置项Adbyby Plus+
         sed -i '/CONFIG_FIRMWARE_INCLUDE_OC/d' .config #删除配置项CPU OC
         sed -i '/CONFIG_FIRMWARE_MT7621_OC/d' .config #删除配置项MT7621 OC Rate
         sed -i '/CONFIG_FIRMWARE_INCLUDE_VLMCSD/d' .config #删除配置项VLMCSD(Local KMS) 
