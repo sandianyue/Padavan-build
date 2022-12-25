@@ -37,6 +37,9 @@ jobs:
         cp /opt/RT-n56u/toolchain-mipsel/dl_toolchain.sh /opt/rt-n56u/toolchain-mipsel/
         cp /opt/RT-n56u/trunk/clear_tree /opt/rt-n56u/trunk/
         cp /opt/RT-n56u/trunk/build_firmware_modify /opt/rt-n56u/trunk/
+        cp /opt/RT-n56u/trunk/toolchain.inc /opt/rt-n56u/trunk/
+        sed -i 's/kernel_id="3.4.x"/kernel_id="4.4.x"/g' /opt/rt-n56u/trunk/build_firmware_modify
+        
         cd /opt/rt-n56u/toolchain-mipsel
         sh dl_toolchain.sh
         mkdir -p /opt/images/
