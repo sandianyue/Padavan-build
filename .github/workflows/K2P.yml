@@ -33,6 +33,10 @@ jobs:
     - name: Clone source code
       run: |
         git clone --depth=1 https://github.com/tsl0922/padavan.git /opt/rt-n56u
+        git clone --depth=1 https://github.com/77160860/Padavan.git /opt/RT-n56u
+        cp /opt/RT-n56u/toolchain-mipsel/dl_toolchain.sh /opt/rt-n56u/toolchain-mipsel/
+        cp /opt/RT-n56u/trunk/clear_tree /opt/rt-n56u/trunk/
+        cp /opt/RT-n56u/trunk/build_firmware_modify /opt/rt-n56u/trunk/
         cd /opt/rt-n56u/toolchain-mipsel
         sh dl_toolchain.sh
         mkdir -p /opt/images/
